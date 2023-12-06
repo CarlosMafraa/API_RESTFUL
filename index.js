@@ -6,7 +6,11 @@ let contatos = [];
 let idAtual = 1;
 
 app.get('/contatos', (req, res) => {
-    res.json(contatos);
+    if(contatos && contatos.length > 0){
+        res.json(contatos);
+    } else {
+        res.status(404).send('A lista de contatos está vazia!');
+    }
 });
 
 app.post('/contatos', (req, res) => {
