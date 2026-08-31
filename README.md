@@ -6,7 +6,7 @@ Este projeto consiste em uma API simples de contatos, desenvolvida em Node.js ut
 
 O projeto está estruturado da seguinte forma:
 
-1. **Servidor (`server.js`):**
+1. **Servidor (`index.js`):**
     - Utiliza o Express para criar um servidor web.
     - Define endpoints para operações CRUD (Create, Read, Update, Delete) em uma lista de contatos.
     - Utiliza um array `contatos` para armazenar os registros e um contador `idAtual` para atribuir IDs únicos.
